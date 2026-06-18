@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# ML artifacts (regenerate locally)
+dataset/
+models/*.h5
+models/*.keras
+logs/
+results/*
+!results/.gitkeep
+!docs/assets/
+
+# TensorBoard / OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+.kaggle/
+*.env
+.env.*
+
+# Jupyter
+.ipynb_checkpoints/
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/

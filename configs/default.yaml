@@ -1,0 +1,38 @@
+# Brain Tumor Detection — training configuration
+seed: 42
+img_size: [224, 224]
+num_classes: 2
+batch_size: 32
+epochs: 30
+val_split: 0.2
+fine_tune: false
+unfreeze_layers: 30
+
+paths:
+  data_dir: dataset/
+  model_path: models/brain_tumor_model.h5
+  labels_path: models/class_labels.json
+  results_dir: results/
+  logs_dir: logs/
+
+training:
+  learning_rate_head: 0.001
+  learning_rate_finetune: 0.00001
+  early_stopping_patience_phase1: 7
+  early_stopping_patience_phase2: 5
+  reduce_lr_patience: 3
+  reduce_lr_factor: 0.5
+  min_lr: 0.0000001
+
+augmentation:
+  rotation_range: 20
+  zoom_range: 0.15
+  width_shift_range: 0.1
+  height_shift_range: 0.1
+  horizontal_flip: true
+  vertical_flip: false
+  brightness_range: [0.85, 1.15]
+
+evaluation:
+  cv_folds: 5
+  positive_class_index: 1  # "yes" / tumor
