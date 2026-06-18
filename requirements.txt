@@ -7,6 +7,8 @@ scikit-learn==1.4.2
 opencv-python-headless==4.9.0.80
 Pillow==10.3.0
 streamlit==1.33.0
+streamlit-option-menu==0.3.12
+reportlab==4.1.0
 PyYAML==6.0.1
 
 # Optional: Kaggle dataset download

@@ -25,6 +25,8 @@ logs/
 results/*
 !results/.gitkeep
 !docs/assets/
+reports/*
+!reports/.gitkeep
 
 # TensorBoard / OS
 .DS_Store
@@ -42,3 +44,19 @@ Thumbs.db
 .pytest_cache/
 .coverage
 htmlcov/
+dataset/
+models/brain_tumor_model.h5
+
+logs/
+
+__pycache__/
+*.pyc
+
+.pytest_cache/
+
+reports/*.pdf
+
+results/gradcam_*.png
+
+.venv/
+venv/

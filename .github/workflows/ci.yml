@@ -30,4 +30,4 @@ jobs:
         run: pytest tests/ -v --ignore=tests/test_inference.py
 
       - name: Lint imports (smoke)
-        run: python -c "import sys; sys.path.insert(0,'src'); import brain_tumor"
+        run: python -c "import sys; sys.path.insert(0,'src'); import brain_tumor; import report_generator"

@@ -80,6 +80,11 @@ python predict.py --image path/to/mri.jpg --no-gradcam
 streamlit run app/streamlit_app.py
 ```
 
+Features:
+- Dashboard with validation metrics
+- MRI upload, classification, and Grad-CAM
+- **Clinical PDF report** generation (`reports/report_<timestamp>.pdf`)
+
 ### 6. Cross-validation (optional)
 
 ```bash
