@@ -19,8 +19,8 @@ env/
 
 # ML artifacts (regenerate locally)
 dataset/
-models/*.h5
-models/*.keras
+
+
 logs/
 results/*
 !results/.gitkeep
