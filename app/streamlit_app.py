@@ -57,7 +57,7 @@ CUSTOM_CSS = """
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
 
 :root {
-    --bg: #F5F4F0;
+    --bg: #F0F0F0;
     --bg-warm: #FAF9F6;
     --ink: #0F172A;
     --muted: #64748B;
